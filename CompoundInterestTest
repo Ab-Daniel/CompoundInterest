@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class CompoundInterestTest 
+{
+
+	public static void main(String[] args) 
+	{
+		
+		Scanner console = new Scanner(System.in);
+		System.out.println("Enter the principal ");
+		double principal = console.nextDouble();
+		System.out.println("Enter the rate as an integer ");
+		int rate = console.nextInt();
+		System.out.println("Enter the time in years ");
+		int years = console.nextInt();
+		
+		CompundInterest interest = new CompundInterest(principal, rate, years);
+		
+		CompundInterest.getAmount();
+		
+	}
+
+}

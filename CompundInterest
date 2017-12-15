@@ -1,0 +1,33 @@
+
+public class CompundInterest 
+{
+	public CompundInterest(double principal, int rateOfInterest, int numOfYears)
+	{
+		p = principal;
+		
+		r = rateOfInterest/100;
+		
+		n = numOfYears;
+	}
+	
+	public String getAmount()
+	{
+		double a = p*Math.pow((1 + r), n);
+		
+		String str = String.format("$%1.2f", a);
+		
+		return "The amount of investment after " + n + " years is " + str;
+	}
+	
+	public void incrementYear()
+	{
+		n++;
+	}
+	
+	private double p;
+	
+	private double r;
+	
+	private int n;
+	
+}

@@ -14,9 +14,16 @@ public class CompoundInterestTest
 		System.out.println("Enter the time in years ");
 		int years = console.nextInt();
 		
-		CompundInterest interest = new CompundInterest(principal, rate, years);
+		CompoundInterest moneybags = new CompoundInterest(principal, rate, years);
 		
-		CompundInterest.getAmount();
+		System.out.println(moneybags.getAmount());
+		moneybags.incrementYear();
+		System.out.println(moneybags.getAmount());
+		moneybags.incrementYear();
+		System.out.println(moneybags.getAmount());
+		moneybags.incrementYear();
+		System.out.println(moneybags.getAmount());
+		
 		
 	}
 
